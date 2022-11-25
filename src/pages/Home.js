@@ -2,10 +2,11 @@ import React from 'react'
 import SearchForm from '../components/SearchForm'
 import CocktailList from '../components/CocktailList'
 
-const Home = ({ setView, setCocktailId, setSearchTerm, cocktails, loading }) => {
+const Home = ({ setView, setCocktailId, searchTerm, setSearchTerm, cocktails, loading }) => {
   return (
     <div>
-      <SearchForm />
+      <SearchForm {...{ searchTerm, setSearchTerm }} />
+      <CocktailList {...{cocktails}} />
     </div>
   )
 }
