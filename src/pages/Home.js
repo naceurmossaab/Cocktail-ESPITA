@@ -5,7 +5,7 @@ import CocktailList from '../components/CocktailList'
 const Home = ({ setView, setCocktailId, setSearchTerm, cocktails, loading }) => {
   return (
     <div>
-      home page
+      <SearchForm />
     </div>
   )
 }
